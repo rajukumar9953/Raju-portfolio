@@ -3,8 +3,29 @@ body{
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 400;
     overflow-x: hidden;
-    width: 100%;
+    /* background-color: rgba(254, 250, 250, 0.396); */
     
+    width: 100vw;
+    /* height: 100vh; */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* z-index: ; */
+    /* scrollbar-width: none; */
+   
+      
+}
+/* body::-webkit-scrollbar {
+    display: none;
+  } */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html , body{
+    height: 100vh;
+    width: 100vw;
 }
 
 
@@ -12,13 +33,13 @@ body{
 
 .nav-menu{
     border: none;
-    background-color: #fff;
+    background-color: transparent;
     font-size: 1.5rem;
     color: #fca61f;
 }
 /* styling navbar links  */
 .navbar-nav a{
-    color: black;
+    color: #3b2d97;
     position: relative;
 }
 .navbar-nav a:hover{
@@ -48,14 +69,26 @@ body{
     color: #fff;
     font-size: 1.2rem;
 }
+.c-btn:hover{
+    background-color:#6f34fe
+}
 /* styling home section starts */
 .home{
-    background: linear-gradient(33deg, rgba(242,242,255,1) 0%, rgba(235,249,255,1) 100%);
+    background: rgb(255, 255, 255);
     padding: 30px 0px 10px 0px;
+    /* height: 787px; */
+    overflow-x: hidden;
+    
+    /* justify-content: space-between; */
 }
 .home h2{
     font-size: 3rem;
     line-height: 4rem;
+    color: #3f396d;
+    margin-left: 40%;
+    padding-right: 218px; 
+       /* background-color: ; */
+       margin-top: 90px;
 }
 .c-orange{
     color: #6f34fe;
@@ -63,47 +96,70 @@ body{
     font-size: 4rem;
 }
 .home p{
-    width: fit-content;
-    margin-top: 1rem;
-    font-size: 1.2rem;
+    margin-left: 800px;
+    font-size: x-large;
+    white-space:nowrap;
+    overflow: hidden;
+    border-right: 2px solid #00ffcc;
+    width: 0;
+    animation:typing 3s steps(30) forwards,blink 0.7s step-end infinite;
+    }
+@keyframes typing{
+    from { width:0;}
+    to {width:52%}
 }
+@keyframes blink {
+    50% {border-color:transparent}
+}
+
+
+
+
 .h-btn:hover{
     background: #6f34fe;
     color: #fff;
     transform: translateY(-20px);
     transition-duration: 1s;
 }
-.link{
-    text-decoration: none;
-    font-size: 1.2rem;
-    color: #fca61f;
-    position: relative;
+@media  (min-width:360px) {
+    .home h2{
+        /* justify-content: center; */
+        /* margin-left: 2px; */
+        margin: 48px 0px 8px 2px;
+        padding:28px 17px 50px 8px
+        
+    }
+    p.text{
+        margin-left: 1px;
+        color: #c6710f;
+        text-align: center;
+        /* font-size:90 ; */
+
+        font-weight: 800;
 }
-.link::after{
-    content: '';
-    position: absolute;
-    width: 100%;
-    transform: scaleX(0);
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    top: 20px;
-    background-color: #6f34fe;
-    transform-origin: bottom right;
-    transition: transform 0.25s ease-out;
+#Hire-btu{
+    margin: 0px 0px 0px 290px;
+    padding-left: 40px;
+   
 }
-.link:hover{
-    color: #6f34fe;
+.service-card1{
+    display:flex;
+    flex-wrap: wrap;
 }
-.link:hover::after{
-    transform: scaleX(1);
-    transform-origin: bottom left;
+.service-card1{
+    /* background-color: red; */
+    margin-left: 6px;
 }
+}
+
 /* adding animation to home section image  */
 .home img{
     animation: floatimg 4s ease-in-out infinite;
 }
 
+.home img{
+    border-radius: 20px;
+}
 @keyframes floatimg {
     0%{
         transform: translateX(0);
@@ -117,6 +173,11 @@ body{
 }
 
 /* expertise section starts */
+.expertise{
+    /* background-color: red; */
+   
+}
+
 .heading small{
     color: #6f34fe;
     font-size: 1.5rem;
@@ -124,9 +185,10 @@ body{
 }
 .heading h3{
     margin-top: 0.5rem;
-    color: #3f396d;
+    color: #3b2d97;
     font-size: 2.5rem;
     font-weight: 700;
+
 }
 .expertise h4{
     color: #3f396d;
@@ -146,53 +208,36 @@ body{
 }
 
 /* skill section starts */
-.skill{
-    background-color: rgb(234, 234, 249);
+#skill{
+    background-color: white;
+    /* height: 1100px; */
+    
+
 }
+
+/* 
 .progress-card{
     padding: 12% 10% 10% 15%;
-    background-color: #fff;
+    background-color: #1d1717;
     text-align: center;
-    border-radius: 10%;
+    border-radius: 45px;
 }
 .progress-card:hover{
     transform: scale(1.1,1.1);
     transition-duration: 0.6s;
 }
-.circular-progress{
-    position: relative;
-    height: 130px;
-    width: 130px;
-    border-radius: 50%;
-    background: conic-gradient(#7d2ae8 3.6deg, #ededed 0deg);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.circular-progress::before{
-    content: "";
-    position: absolute;
-    height: 120px;
-    width: 120px;
-    border-radius: 50%;
-    background-color: #fff;
-}
-.progress-value{
-    position: relative;
-    font-size: 1.5rem;
-    font-weight: 600;
-}
-.html-progress{
+
+.text{
     color: #fca61f;
 }
-.javascript-progress{
+.javascript{
     color: #6f34fe;
 }
-.CSS-progress{
+.css{
     color: #20c997;
 }
-.reactjs-progress{
-    color: #3f396d;
+.reactjs{
+    color: #4d439c;
 }
 .text{
     font-size: 1.2rem;
@@ -200,9 +245,13 @@ body{
 }
 .heading p{
     font-size: 1.3rem;
-}
+} */
 
 /* portfolio section starts */
+#portfolio{
+    background-color:rgb(189, 189, 223);
+    margin-top: -16px;
+}
 #myBtnContainer{
     margin-bottom: 45px;
 }
@@ -217,7 +266,7 @@ body{
   margin: 0 25px;
 }
 #myBtnContainer button:hover{
-    color: #fca61f;
+    color: #6f34fe;
 }
 
 #myBtnContainer button:focus{
@@ -253,6 +302,7 @@ body{
     color: #6f34fe;
 }
 /* contact section starts */
+
 .contact{
     background-color: #f3f3f3;
 }
@@ -272,6 +322,12 @@ body{
     padding: 10px 10px;
     width: 80%;
 }
+#but{
+background-color:orange;
+}
+#but:hover{
+    background-color: #6f34fe;
+}
 
 /* footer section starts */
 footer{
@@ -289,6 +345,12 @@ footer .link-group a{
 footer .link-group a:hover{
     color: #fca61f;
 }
+#new-footer,h3{
+color: white;
+}
+#new-footer,h3:hover{
+    color: #6f34fe;
+}
 .social-links button{
     border: none;
     margin-right: 1rem;
@@ -297,7 +359,7 @@ footer .link-group a:hover{
     padding: 14px 15px 10px 15px;
 }
 .social-links .dribble{
-    color: #f33a7e;
+    color: rgb(38, 74, 174);
 }
 .social-links button:hover{
     color: #fff;
@@ -305,7 +367,7 @@ footer .link-group a:hover{
     transition-duration: 1s;
 }
 .social-links .dribble:hover{
-    background-color: #f33a7e;
+    background-color: rgb(38, 74, 174);
 }
 .social-links .whatsapp{
     color: #25D366;

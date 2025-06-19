@@ -1,0 +1,188 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: "Gucci Sans Pro Medium", Helvetica, ;
+    /* height: 200vh; */
+
+    background-color: #4b000a;
+  }
+
+  header {
+    height: 100px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #4b000a;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 50;
+    opacity: 0;
+  }
+
+
+
+  .logo {
+    position: absolute;
+    left: 15%;
+    top: 3px;
+    padding: 40px;
+    transform: translate(-25%, -25%);
+    font-size: 450px;
+
+    font-weight: 10;
+    color: rgb(232, 226, 226);
+    /* text-align: center; */
+    width: 400px;
+    height: 40px;
+    /* transition: transform all 0.9s ease-out; */
+
+  }
+
+  #bigimg {
+    height: 130vh;
+    background-color: black;
+    position: relative;
+
+  }
+
+
+  h2 {
+    position: absolute;
+    z-index: 9;
+
+    font-size: 50px;
+    margin-left: 30%;
+    margin-top: 40%;
+    /* margin-bottom: 50px; */
+    color: white;
+  }
+
+  .icons {
+    display: flex;
+    gap: 16px;
+  }
+
+  .icon {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+  }
+
+  #imgs {
+    display: flex;
+    margin-top: 20px;
+    gap: 60px;
+    /* padding: 2px 5px 3px; */
+    /* position:absolute; */
+    margin-left: 50px;
+    background-position: center;
+    background-size: cover;
+
+
+
+  }
+
+  #imgs h3 {
+    color: white;
+    display: flex;
+    justify-content: center;
+  }
+
+  .box1 {
+    background-color: rgb(91, 79, 79);
+    height: 400px;
+    width: 300px;
+
+  }
+
+  .box2 img {
+    background-color: rgb(99, 67, 67);
+    height: 400px;
+    width: 350px;
+  }
+
+  .box3 img {
+    background-color: black;
+    height: 400px;
+    width: 350px;
+  }
+
+  .box4 img {
+    background-color: rgb(25, 23, 139);
+    height: 400px;
+    width: 350px;
+  }
+
+  #whitegucci img {
+    width: 87vw;
+    height: 800px;
+    margin-top: 30px;
+    margin-left: 6%;
+  }
+
+  #box2 {
+    gap: 90px;
+    display: flex;
+    background-position: center;
+    margin-top: 140px;
+
+
+
+  }
+
+  .img1 {
+    background-color: rgb(107, 84, 84);
+    width: 30vw;
+    height: 500px;
+    background-image: url("https://media.gucci.com/content/DiaryArticleDouble_Small_640x408/1720080907/DiaryArticleDouble_GUCCI-CVD-PRODUCTONMODELSTILL1-NOLOGO_001_Default.jpg");
+    background-size: 100% 100%;
+
+  }
+
+  .img2 {
+    background-color: rgb(106, 37, 37);
+    width: 30vw;
+    height: 500px;
+    background-image: url("https://c4.wallpaperflare.com/wallpaper/146/631/644/gucci-desktop-hd-pics-wallpaper-preview.jpg");
+    background-size: 100% 100%;
+  }
+
+  .img3 {
+    background-color: rgb(242, 222, 222);
+    width: 30vw;
+    height: 500px;
+    background-image: url("https://images.prestigeonline.com/wp-content/uploads/sites/6/2024/12/11132510/GucciGift-5-1600x900.jpg");
+    background-size: 100% 100%;
+  }
+  #underline{
+    width: 300px;
+    height: 1.5px;
+    background-color: #fff;
+    justify-self: center;
+    margin-top: 70px;
+  }
+  #coatmen{
+    display: flex;
+    /* height: 800px; */
+    /* width: 60vw; */
+    /* background-color: #fff; */
+  }
+  #coatmen img{
+    margin-top: 9%;
+    margin-left: 90px;
+    width: 40vw;
+    
+   
+  }
+  #coatmen pr{
+    font-size: 20px;
+    margin-top: 20%;
+margin-left: 20%;
+color: white;
+/* justify-self: center; */
+  }
+  #coatmen p,h1{
+    color: white;
+    margin-bottom: 15%;
+    margin-left: 60px;
+  }

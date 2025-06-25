@@ -95,18 +95,19 @@ html , body{
     font-weight: 700;
     font-size: 4rem;
 }
-.home p{
-    margin-left: 800px;
+.home p.text{
+    
+    /* margin-left: 00px; */
     font-size: x-large;
     white-space:nowrap;
     overflow: hidden;
-    border-right: 2px solid #00ffcc;
+    border-right: 2px solid #6f34fe;
     width: 0;
     animation:typing 3s steps(30) forwards,blink 0.7s step-end infinite;
     }
 @keyframes typing{
     from { width:0;}
-    to {width:52%}
+    to {width:62%}
 }
 @keyframes blink {
     50% {border-color:transparent}
@@ -121,6 +122,17 @@ html , body{
     transform: translateY(-20px);
     transition-duration: 1s;
 }
+ 
+
+
+.home p.text{
+        margin-left: 98px;
+        /* display:block;  */
+        color: #c6710f;
+        font-weight: 800;
+}
+
+  
 @media  (min-width:360px) {
     .home h2{
         /* justify-content: center; */
@@ -129,13 +141,17 @@ html , body{
         padding:28px 17px 50px 8px
         
     }
-    p.text{
-        margin-left: 1px;
-        color: #c6710f;
-        text-align: center;
-        /* font-size:90 ; */
-
-        font-weight: 800;
+    
+    /* #animation p#moblie{
+        display:block ;
+    } */
+  
+#skill, h1{
+    margin-top: 190px;
+}
+#portfolio{
+    margin-top: 18px;
+    
 }
 #Hire-btu{
     margin: 0px 0px 0px 290px;
@@ -210,47 +226,12 @@ html , body{
 /* skill section starts */
 #skill{
     background-color: white;
-    /* height: 1100px; */
-    
-
 }
-
-/* 
-.progress-card{
-    padding: 12% 10% 10% 15%;
-    background-color: #1d1717;
-    text-align: center;
-    border-radius: 45px;
-}
-.progress-card:hover{
-    transform: scale(1.1,1.1);
-    transition-duration: 0.6s;
-}
-
-.text{
-    color: #fca61f;
-}
-.javascript{
-    color: #6f34fe;
-}
-.css{
-    color: #20c997;
-}
-.reactjs{
-    color: #4d439c;
-}
-.text{
-    font-size: 1.2rem;
-    font-weight: 500;
-}
-.heading p{
-    font-size: 1.3rem;
-} */
 
 /* portfolio section starts */
 #portfolio{
     background-color:rgb(189, 189, 223);
-    margin-top: -16px;
+    margin-top: 125px;
 }
 #myBtnContainer{
     margin-bottom: 45px;
